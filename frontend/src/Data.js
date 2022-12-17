@@ -1,39 +1,34 @@
-import CharizardImage from "./img/charizard1.jpg"
+import SilverTempest from "./img/Silver Tempest.jpg"
 
 export const Data = [
     {
         id: "1",
-        title: "Charizard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        price: "000",
-        image: CharizardImage
+        title: "Silver Tempest",
+        name: "Pokemon",
+        image: SilverTempest
     },
     {
         id: "2",
-        title: "Charizard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        price: "000",
-        image: ""
+        title: "Lost Origin",
+        name: "Pokemon",
+        image: SilverTempest
     },
     {
         id: "3",
-        title: "Charizard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        price: "000",
-        image: ""
+        title: "Pokemon Go",
+        name: "Pokemon",
+        image: SilverTempest
     },
     {
         id: "4",
-        title: "Charizard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        price: "000",
-        image: ""
+        title: "Astral Radiance",
+        name: "Pokemon",
+        image: SilverTempest
     },
     {
         id: "5",
-        title: "Charizard",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        price: "000",
-        image: ""
-    },
+        title: "Brilliant Stars",
+        name: "Pokemon",
+        image: SilverTempest
+    }
 ]

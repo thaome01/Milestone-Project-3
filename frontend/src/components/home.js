@@ -1,9 +1,14 @@
 import React from 'react'
+import Posting from './Posting'
 
-function home() {
+function home(props) {
+    
   return (
     <div>
-        <h1>Hello</h1>
+      <h5>Latest Pokemon Sets</h5>
+      {props.myData.map((data) => {
+                return <Posting data={data} />
+            })}
     </div>
   )
 }

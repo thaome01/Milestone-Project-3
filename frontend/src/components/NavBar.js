@@ -19,7 +19,7 @@ function NavBar() {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand onClick={() => navigate("/home")}>M.T trading card game</Navbar.Brand>
+                    <Navbar.Brand onClick={() => navigate("/")}>M.T trading card game</Navbar.Brand>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
