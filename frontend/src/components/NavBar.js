@@ -3,13 +3,23 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { useNavigate } from "react-router-dom";
 
-function navbar() {
+function NavBar() {
+
+    const navigate = useNavigate();
+    const change = localStorage.getItem("user");
+
+    const logOut = () => {
+        localStorage.clear();
+        navigate("/home");
+    };
+
     return (
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#">M.T trading card game</Navbar.Brand>
+                    <Navbar.Brand onClick={() => navigate("/home")}>M.T trading card game</Navbar.Brand>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
@@ -20,14 +30,22 @@ function navbar() {
                         <Button variant="outline-success">Search</Button>
 
                     </Form>
-                    <Button>Login</Button>
-                    <Button>Sign in</Button>
+                    {change ? (
+                        <Button onClick={logOut} to="/">
+                            logout
+                        </Button>
+                    ) : (
+                        <>
+                            <Button onClick={() => navigate("/login")}>Login</Button>
+                            <Button onClick={() => navigate("/signup")}>Signup</Button>
+                        </>
+                    )}
+
                     <Button>Sell With Us</Button>
-                    <Button></Button>
                 </Container>
             </Navbar>
         </div>
     )
 }
 
-export default navbar
+export default NavBar
