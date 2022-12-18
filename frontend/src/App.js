@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Home from './components/home'
+import Carousel from './components/carousel'
 import { Data } from './Data'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Router>
         < NavBar />
+        < Carousel/>
         <Routes>
           <Route path="/" element={<Home myData={Data} />} />
           <Route path="login" element={<Login />} />

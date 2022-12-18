@@ -5,7 +5,7 @@ function home(props) {
     
   return (
     <div>
-      <h5>Latest Pokemon Sets</h5>
+      <h1>Latest Pokemon Sets</h1>
       {props.myData.map((data) => {
                 return <Posting data={data} />
             })}
