@@ -1,34 +1,24 @@
-import React from 'react'
-import Posting from './Posting'
+import '../style/posting.css'
 
-function home(props) {
-    
+
+function home() {
   return (
-    <div>
-      <h1>Latest Pokemon Sets</h1>
-      {props.myData.map((data) => {
-                return <Posting data={data} />
-            })}
+    <div className="container">
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
+    <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
     </div>
+  
   )
 }
 
 export default home
-
-
-
-
-// import React,{useEffect, useState} from 'react'
-
-// function Home(props) {
-//     useEffect(() => { 
-//         fetch("https://pokeapi.co/api/v2/pokemon")
-//         .then(res => res.json())
-//         .then(data => console.log(data))
-//     }, [])
-//   return (
-//     <div></div>
-//   )
-// }
-
-// export default Home

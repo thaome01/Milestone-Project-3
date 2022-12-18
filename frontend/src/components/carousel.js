@@ -10,8 +10,7 @@ function CarouselFadeExample() {
                     alt="First slide" />
                 <Carousel.Caption className="caption-text">
                     <div className="captiontext">
-                        <h3>Here is a generic story about technology</h3>
-                        <p>Look at this fun caption</p>
+                        <h3>Latest Update</h3>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>

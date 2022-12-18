@@ -1,22 +1,16 @@
-import React from 'react'
-import '../style/posting.css'
+// import React from 'react'
+// import '../style/posting.css'
 
-function Posting(props) {
-  return (
-    <div className="products">
-      <div className="cards">
-      <div className="product-title">
-        <h6>{props.data.title}</h6>
-        </div>
-        <div className="product-name">
-        <h6>{props.data.name}</h6>
-        </div>
-        <div className="product-images">
-        <img src={props.data.image} alt="pokemon"></img>
-        </div>
-        </div> 
-    </div>
-  )
-}
+// function Posting(props) {
+//   return (
+//     < div className="container">
+//       <div className="cards">
+//         <div><h6 className="product-title">{props.data.title}</h6></div>
+//         <div><h6 className="product-name">{props.data.name}</h6></div>
+//         <div><img className="product-image" src={props.data.image} alt="pokemon"></img></div>
+//         </div>
+//         </div>
+//   )
+// }
 
-export default Posting
+// export default Posting
