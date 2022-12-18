@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import "./login.css"
+
 
 
 function Login() {
@@ -42,9 +44,9 @@ function Login() {
         setPassword(e.target.value);
     };
     return (
-        <Container className="mb-3">
-            <Card className="mb-3">
-                <h3>Trading Card Game</h3>
+        <Container className="mb-1">
+            <Card className="mb-2">
+                <h3>Login</h3>
                 <Card.Body>
                     <Form>
                         <Form.Control

@@ -6,6 +6,9 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import "./signup.css"
+
+
 export default function SignUp() {
     //State for Registration
     const [firstName, setFirstName] = useState("");
@@ -58,8 +61,8 @@ export default function SignUp() {
     };
 
     return (
-        <div className="sign">
-            <Container className="mb-3">
+        <div className="mb-1">
+            <Container className="mb-2">
                 <Card className="mb-3">
                     <h1>Sign Up</h1>
                     <Card.Body>

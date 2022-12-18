@@ -1,8 +1,12 @@
 import '../style/posting.css'
-
+import Carousel from '../components/carousel'
+import NavBar from '../components/NavBar';
 
 function home() {
   return (
+    <>
+    < NavBar />
+    <Carousel/>
     <div className="container">
     <div className="cards"><img src="/img/Astral Radiance.jpg" alt="pokemon" /></div>
     <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
@@ -17,6 +21,7 @@ function home() {
     <div className="cards"><img src="/img/Silver Tempest.jpg" alt="pokemon" /></div>
     <div className="cards"><img src="/img/Vivid Voltage.jpg" alt="pokemon" /></div>
     </div>
+    </>
   
   )
 }
