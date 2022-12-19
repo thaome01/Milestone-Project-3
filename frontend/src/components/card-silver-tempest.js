@@ -1,9 +1,13 @@
 import React from 'react'
+import NavBar from '../components/NavBar';
 
 function silverTempest() {
-  return (
-    <div>card-silver-tempest</div>
-  )
+    return (
+        <>
+            < NavBar />
+            <div>card-silver-tempest</div>
+        </>
+    )
 }
 
 export default silverTempest

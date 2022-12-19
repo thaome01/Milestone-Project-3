@@ -5,6 +5,7 @@ import Feature from '../components/feature';
 import { useNavigate } from "react-router-dom";
 
 function Home() {
+
   const navigate = useNavigate();
 
   return (
@@ -13,7 +14,7 @@ function Home() {
       <Carousel />
       < Feature />
       <div className="container">
-        <div className="cards"><img src="/img/Silver Tempest.jpg" alt="pokemon" onClick={() => navigate("/SilverTempest")} /></div>
+        <div className="cards"><img src="/img/Silver Tempest.jpg" alt="pokemon" onClick={() => navigate("/SilverTempest")}/></div>
         <div className="cards"><img src="/img/Lost Origin.jpg" alt="pokemon" /></div>
         <div className="cards"><img src="/img/Pokemon Go.jpg" alt="pokemon" /></div>
         <div className="cards"><img src="/img/Astral Radiance.jpg" alt="pokemon" /></div>

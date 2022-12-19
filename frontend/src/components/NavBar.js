@@ -5,8 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { useNavigate } from "react-router-dom";
-
 import "./navbar.css";
+
+
 
 function NavBar() {
 
@@ -20,6 +21,7 @@ function NavBar() {
 
     return (
         <div className="body">
+            
             <Navbar>
                 <Container>
                     <div className="logo">
