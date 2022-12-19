@@ -23,7 +23,7 @@ function NavBar() {
 
     return (
         <div className="body">
-            
+
             <Navbar>
                 <Container>
                     <div className="logo">
@@ -32,34 +32,34 @@ function NavBar() {
                         </Navbar.Brand>
                     </div>
                     <div className="drop-down">
-                    <NavDropdown title="POKEMON SERIES">
-                        <h4><u>Latest Series</u></h4>
-                        <NavDropdown.Item>SWORD & SHIELD</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>SM SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>XY SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>BLACK & WHITE SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>CALL OF LEGENDS SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>HEARTGOLD & SOULSILVER SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>PLATINUM SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>DIAMOND & PEARL SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>EX SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>E-CARD SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>LEGENDARY COLLECTION</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>NEO SERIES</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item>ORIGINAL SERIES</NavDropdown.Item>
-                    </NavDropdown>
+                        <NavDropdown title="POKEMON SERIES">
+                            <h4><u>Latest Series</u></h4>
+                            <NavDropdown.Item>SWORD & SHIELD</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>SM SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>XY SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>BLACK & WHITE SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>CALL OF LEGENDS SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>HEARTGOLD & SOULSILVER SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>PLATINUM SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>DIAMOND & PEARL SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>EX SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>E-CARD SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>LEGENDARY COLLECTION</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>NEO SERIES</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item>ORIGINAL SERIES</NavDropdown.Item>
+                        </NavDropdown>
                     </div>
                     <Form className="d-flex">
                         <Form.Control
@@ -72,21 +72,21 @@ function NavBar() {
 
                     </Form>
                     <div className='btn-0'>
-                    {change ? (
-                        <Button onClick={logOut} to="/" variant="dark" className="btn-2">
-                            logout
-                        </Button>
-                    ) : (
-                        <>
-                            <Button onClick={() => navigate("/login")} variant="dark" className="btn-3">Login</Button>
-                            <Button onClick={() => navigate("/signup")} variant="dark" className="btn-4">Signup</Button>
-                        </>
-                    )}
+                        {change ? (
+                            <Button onClick={logOut} to="/" variant="dark" className="btn-2">
+                                logout
+                            </Button>
+                        ) : (
+                            <>
+                                <Button onClick={() => navigate("/login")} variant="dark" className="btn-3">Login</Button>
+                                <Button onClick={() => navigate("/signup")} variant="dark" className="btn-4">Signup</Button>
+                            </>
+                        )}
 
-                    <Button variant="dark" className="btn-5">sell with us</Button>
-                    <div className="cart">
-                    <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-                    </div>
+                        <Button variant="dark" className="btn-5">sell with us</Button>
+                        <div className="cart">
+                            <FontAwesomeIcon icon={faCartShopping} onClick={() => navigate("/Shopping-Cart")}></FontAwesomeIcon>
+                        </div>
                     </div>
                 </Container>
             </Navbar>
