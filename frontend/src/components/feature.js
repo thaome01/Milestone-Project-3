@@ -7,9 +7,11 @@ function feature() {
   return (
     <div className="feature">
       <Card >
-        <Card.Body>This is some text within a card body.</Card.Body>
+        <Card.Body>
+          <h6>Features Card</h6>
+        </Card.Body>
       </Card>
-      
+
     </div>
   );
 }
