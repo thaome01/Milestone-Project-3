@@ -18,9 +18,9 @@ My inspiration for the application is to bring back customer childhood memories 
 
 - [React](https://reactjs.org/)
 
--[Bootstrap](https://react-bootstrap.github.io/)
+- [Bootstrap](https://react-bootstrap.github.io/)
 
--[font-awesome](https://fontawesome.com/)
+- [font-awesome](https://fontawesome.com/)
 
 ## Addresses any outstanding bugs or unfinished Functionality
 
