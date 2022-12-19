@@ -24,6 +24,6 @@ My inspiration for the application is to bring back customer childhood memories 
 
 ## Addresses any outstanding bugs or unfinished Functionality
 
-*Deploying error 404
-*Shopping Cart unfinished functionality
-*Missing components
+- Deploying error 404
+- Shopping Cart unfinished functionality
+- Missing components
