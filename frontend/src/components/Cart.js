@@ -5,7 +5,7 @@ function Cart() {
   return (
     <>
     < NavBar />
-    <div>Cart</div>
+        
     </>
   )
 }
