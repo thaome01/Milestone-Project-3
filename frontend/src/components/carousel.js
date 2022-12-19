@@ -1,6 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./carousel.css";
 
+
 function CarouselFadeExample() {
     return (
         <Carousel>
@@ -10,7 +11,7 @@ function CarouselFadeExample() {
                     alt="First slide" />
                 <Carousel.Caption className="caption-text">
                     <div className="captiontext">
-                        <h3>Latest Update</h3>
+                        <h1>NOW AVAILABLE</h1>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -19,8 +20,7 @@ function CarouselFadeExample() {
                 <img className="picture-container" src="/container-2.jpg" alt="Second slide" />
                 <Carousel.Caption className="caption-text">
                     <div className="captiontext">
-                        <h3>Space Robots!</h3>
-                        <p>Will the murder us all? Who knows?</p>
+                    <h1>NOW AVAILABLE</h1>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -34,10 +34,7 @@ function CarouselFadeExample() {
 
                 <Carousel.Caption className="caption-text">
                     <div className="captiontext">
-                        <h3>Sports ball match!</h3>
-                        <p>
-                            Have you seen the people getting hurt on the sports ball field?
-                        </p>
+                    <h1>NOW AVAILABLE</h1>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>

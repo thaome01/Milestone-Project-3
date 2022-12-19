@@ -5,12 +5,12 @@
 }
 
 .picture-container {
-  width: 1000px;
+  width: 1500px;
   height: 300px;
   position: center;
   top: 0;
   left: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 img {
@@ -25,11 +25,15 @@ img {
   opacity: 75%;
 }
 
-.captiontext {
+.caption-text {
+  border-style: solid;
+  padding: auto;
+  width: 400px;
+  margin-left: 175px;
+  background-color: black;
   color: black;
-  opacity: 100%;
 }
 
-.carouselimg {
+.carousel-img {
   border-radius: 10px;
 }
