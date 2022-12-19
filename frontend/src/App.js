@@ -2,6 +2,7 @@ import React from 'react'
 import Login from './components/login';
 import SignUp from './components/signup';
 import Home from './components/home'
+import CardSilverTempest from './components/card-silver-tempest'
 
 // import { Data } from './Data'    myData={Data}
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="Signup" element={<SignUp />} />
+          <Route path="SilverTempest" element={<CardSilverTempest/>} />
         </Routes>
       </Router>
     </div>
