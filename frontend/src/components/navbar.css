@@ -1,0 +1,35 @@
+.body {
+  background-color: rgb(232, 11, 11);
+}
+
+.btn-0 {
+  left: 200px;
+  display: flex;
+  flex-direction: row;
+  height: -100px;
+  position: relative;
+  column-gap: 10px;
+}
+
+.logo {
+  margin-left: -275px;
+  position: relative;
+}
+
+.d-flex {
+  right: 100px;
+  width: 600px;
+  position: relative;
+}
+
+.drop-down {
+  margin-right: auto;
+  position: relative;
+}
+
+.cart {
+  position: absolute;
+  left: 285px;  
+  font-size: x-large;
+}
+

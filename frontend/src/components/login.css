@@ -1,0 +1,18 @@
+.login {
+  height: 100px;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -200px;
+  text-align: center;
+}
+
+/* .login {
+  background-image: url(../components/images/pokeball.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+} */
