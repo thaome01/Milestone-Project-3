@@ -27,4 +27,9 @@
   position: relative;
 }
 
+.cart {
+  position: absolute;
+  left: 285px;  
+  font-size: x-large;
+}
 

@@ -4,10 +4,12 @@ import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 function NavBar() {
 
@@ -82,6 +84,9 @@ function NavBar() {
                     )}
 
                     <Button variant="dark" className="btn-5">sell with us</Button>
+                    <div className="cart">
+                    <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                    </div>
                     </div>
                 </Container>
             </Navbar>
