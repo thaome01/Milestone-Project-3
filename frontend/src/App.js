@@ -1,5 +1,4 @@
 import React from 'react'
-// import NavBar from './components/NavBar';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Home from './components/home'
@@ -14,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* < NavBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />

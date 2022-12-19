@@ -10,6 +10,7 @@ import "./login.css"
 
 
 
+
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -28,7 +29,7 @@ function Login() {
         console.log(result);
         if (result.firstName) {
             localStorage.setItem("user", JSON.stringify(result));
-            navigate("/home");
+            navigate("/");
         } else {
             alert("Your database do not exist!");
         }
@@ -44,7 +45,9 @@ function Login() {
         setPassword(e.target.value);
     };
     return (
-        <Container className="mb-1">
+        <div style={{ backgroundImage: `url({Background})`}}>
+        <div className="login">
+        <Container>
             <Card className="mb-2">
                 <h3>Login</h3>
                 <Card.Body>
@@ -76,6 +79,8 @@ function Login() {
                 </Card.Body>
             </Card>
         </Container>
+        </div>
+        </div>
     );
 }
 

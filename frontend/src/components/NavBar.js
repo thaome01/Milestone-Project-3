@@ -6,6 +6,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { useNavigate } from "react-router-dom";
 
+import "./navbar.css";
+
 function NavBar() {
 
     const navigate = useNavigate();
@@ -13,29 +15,48 @@ function NavBar() {
 
     const logOut = () => {
         localStorage.clear();
-        navigate("/home");
+        navigate("/");
     };
 
     return (
-        <div>
-            <Navbar bg="light" expand="lg">
+        <div className="body">
+            <Navbar>
                 <Container>
-                <Navbar.Brand onClick={() => navigate("/")}>M.T trading card game</Navbar.Brand>
-                <NavDropdown title="POKEMON SERIES" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-           
-
-
+                    <div className="logo">
+                        <Navbar.Brand onClick={() => navigate("/")}>
+                            M.T[TRADING CARD GAME]
+                        </Navbar.Brand>
+                    </div>
+                    <div className="drop-down">
+                    <NavDropdown title="POKEMON SERIES">
+                        <h4><u>Latest Series</u></h4>
+                        <NavDropdown.Item>SWORD & SHIELD</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>SM SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>XY SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>BLACK & WHITE SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>CALL OF LEGENDS SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>HEARTGOLD & SOULSILVER SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>PLATINUM SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>DIAMOND & PEARL SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>EX SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>E-CARD SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>LEGENDARY COLLECTION</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>NEO SERIES</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item>ORIGINAL SERIES</NavDropdown.Item>
+                    </NavDropdown>
+                    </div>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
@@ -43,21 +64,23 @@ function NavBar() {
                             className="me-2"
                             aria-label="Search"
                         />
-                        <Button variant="outline-success">Search</Button>
+                        <Button variant="dark">Search</Button>
 
                     </Form>
+                    <div className='btn-0'>
                     {change ? (
-                        <Button onClick={logOut} to="/">
+                        <Button onClick={logOut} to="/" variant="dark" className="btn-2">
                             logout
                         </Button>
                     ) : (
                         <>
-                            <Button onClick={() => navigate("/login")}>Login</Button>
-                            <Button onClick={() => navigate("/signup")}>Signup</Button>
+                            <Button onClick={() => navigate("/login")} variant="dark" className="btn-3">Login</Button>
+                            <Button onClick={() => navigate("/signup")} variant="dark" className="btn-4">Signup</Button>
                         </>
                     )}
 
-                    <Button>Sell With Us</Button>
+                    <Button variant="dark" className="btn-5">sell with us</Button>
+                    </div>
                 </Container>
             </Navbar>
         </div>
