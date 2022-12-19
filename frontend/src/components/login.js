@@ -45,11 +45,11 @@ function Login() {
         setPassword(e.target.value);
     };
     return (
-        <div style={{ backgroundImage: `url({Background})`}}>
+        <div className="body">
         <div className="login">
         <Container>
             <Card className="mb-2">
-                <h3>Login</h3>
+                <h3>User Login</h3>
                 <Card.Body>
                     <Form>
                         <Form.Control
@@ -72,7 +72,6 @@ function Login() {
                         />
                         <br />
                         <Button variant="secondary" onClick={handleLogin}>
-                            {" "}
                             LOG IN
                         </Button>
                     </Form>
