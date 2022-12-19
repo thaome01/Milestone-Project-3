@@ -29,9 +29,9 @@ img {
   border-style: solid;
   padding: auto;
   width: 400px;
-  margin-left: 175px;
+  margin-right: 2000px;
   background-color: black;
-  color: black;
+  color: rgb(254, 254, 254);
 }
 
 .carousel-img {

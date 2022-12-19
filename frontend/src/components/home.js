@@ -1,12 +1,14 @@
 import '../style/posting.css'
-import Carousel from '../components/carousel'
+import Carousel from '../components/carousel';
 import NavBar from '../components/NavBar';
+import Feature from '../components/feature';
 
 function home() {
   return (
     <>
       < NavBar />
       <Carousel />
+      < Feature />
       <div className="container">
         <div className="cards"><img src="/img/Astral Radiance.jpg" alt="pokemon" /></div>
         <div className="cards"><img src="/img/Battle Style.jpg" alt="pokemon" /></div>
