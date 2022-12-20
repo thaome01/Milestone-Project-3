@@ -4,8 +4,8 @@ import NavBar from '../components/NavBar';
 function Cart() {
   return (
     <>
-    < NavBar />
-        
+      < NavBar />
+      <h1>What did I buy</h1>
     </>
   )
 }

@@ -24,6 +24,6 @@ My inspiration for the application is to bring back customer childhood memories 
 
 ## Addresses any outstanding bugs or unfinished Functionality
 
-- Deploying error 404
+- Problems with passing Props, was not functioning correctly
 - Shopping Cart unfinished functionality
 - Missing components
